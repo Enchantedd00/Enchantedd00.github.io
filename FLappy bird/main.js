@@ -168,3 +168,9 @@ function pause(){
        keys.KeyP = false; // turn off key
        currentState = game;   // resume game
     }
+function game(){
+    // code to do a single frame of game
+    if(keys.KeyP){
+       keys.KeyP = false; // turn off key
+       currentState = pause;  // pause game
+    }
