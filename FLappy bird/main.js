@@ -161,16 +161,4 @@ function create_pipe() {
 } 
 requestAnimationFrame(create_pipe); 
 } 
-function pause(){
-    // code to do a single frame of pause
-   // display pause
-    if(keys.KeyP){
-       keys.KeyP = false; // turn off key
-       currentState = game;   // resume game
-    }
-function game(){
-    // code to do a single frame of game
-    if(keys.KeyP){
-       keys.KeyP = false; // turn off key
-       currentState = pause;  // pause game
-    }
+
